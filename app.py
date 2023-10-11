@@ -38,7 +38,7 @@ def get_widgets():
 @app.route('/initdb')
 def db_init():
     conn = psycopg2.connect(
-        host="docker-db-db-1",
+        host="db_app",
         user="postgres",
         password=password,
     )
@@ -54,7 +54,7 @@ def db_init():
     conn.close()
 
     conn = psycopg2.connect(
-    host="docker-db-db-1",
+    host="db_app",
     user="postgres",
     password=password,
     database="example"

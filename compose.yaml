@@ -24,7 +24,7 @@ services:
 #       db:
 #         condition: service_healthy
 #   db:
-#     image: postgres
+#     image: postgres 
 #     restart: always
 #     user: postgres
 #     secrets:
